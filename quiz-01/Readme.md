@@ -9,5 +9,11 @@ To push to github (after already adding the quiz folder) cd into the quiz folder
  type 'git add Readme.md' 
 then:  'git commit Readme.md -a -m"write something and include quotes"
 and finally 'git push'
+
+P2.py File:
+First make sure you are in the quiz folder (cd)
+Then type 'cp p1.py p2.py'
+Can use 'ls' to double check that you now have both files
+
  
 
