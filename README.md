@@ -1,1 +1,2 @@
 # csci-127-assignments
+echo -e "After opening the terminal 'cd ' into folder/directory csci-127-assigments by typing 'cd' space and the name of the folder \v then use 'mkdir' leave a space and type quiz-01 \v then enter quiz-01 using 'cd ' command (cd, leave space and write quiz-01)\v then use 'touch' leave space and write Readme.md \v then use echo -e put quotes and write whatever you want in the quotes, using \v to start a new line"

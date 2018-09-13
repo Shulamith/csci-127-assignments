@@ -5,9 +5,9 @@ def repeat_string(word):
 print(greeter("Ollie"))
 print(greeter("Stan"))
 print(repeat_string("hello"))
-def make_abba(a, b):
+def make_abba(a,b):
   return a+b+b+a
-def cigar_party(cigars, is_weekend):
+def cigar_party(cigars,is_weekend):
   if is_weekend and cigars >= 40:
     return True
   else:
