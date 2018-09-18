@@ -1,6 +1,6 @@
 def capitalize(name):
     space_index = name.find(' ')
-    first = name[0:space_index]
+    first = name[0:space_index] #could use not 
     last = name[space_index+1:]
     return(first.capitalize() + " " + last.capitalize())
 print("I entered johnny appleseed and recieved...")    
