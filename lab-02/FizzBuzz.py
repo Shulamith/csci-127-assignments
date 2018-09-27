@@ -11,6 +11,8 @@ def fizzBuzz(number):
         else:
             print(x)
         x=x+1
+  
         
+
         
 print(fizzBuzz(100))
