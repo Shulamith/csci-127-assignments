@@ -1,5 +1,6 @@
 import random
 l=[]
+l2 = [2,4,5,4]
 def build_random_list(size,max_value):
     """
     Parameters:
@@ -7,6 +8,7 @@ def build_random_list(size,max_value):
       max_value : the max random value to put in the list
     """
     l = [] # start with an empty list
+    
 
     # make a loop that counts up to size
     i = 0
@@ -18,19 +20,31 @@ def build_random_list(size,max_value):
     return l
 
 def locate(l,value):
-    l = build_random_list(7,7)
+    l = build_random_list(7,7) #maybe I don't want to do this, maybe I just want a regular list? Like form one beforehand? or do i want to build one each time?outside function?
     print(l)
     i = 0
-    while i < 7:
+    while i < 7: #7 only makes sense now--beware!
         if l[i] == value:
-            print(i)
+            print(i) #I can use return instead if I only want to look for it once. If I want to print it each time I have to figure out how to do the -1 when there is nothing ever.
         else:
             pass
         i+=1
-   
+def count(l2,value2):
+    print("l2",l2)
+    i = 0
+    appears_list = 0
+    while i < len(l2):
+        if l2[i] == value2:
+            appears_list +=1
+        else:
+            pass
+        i+=1
+    return appears_list
+            
 
 print(build_random_list(7,7))
 print(locate(l,1))
+print(count(l2,4))
 
 ##
 ##     i += 1
