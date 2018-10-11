@@ -1,19 +1,11 @@
 import random
 l=[]
-l2 = [2,4,5,4]
+l2 =[2,4,5,4]
 l3=[1,6,9,10]
 l4=[5,6,7,8,8,7,6,5]
 l5=[8,3,5,3,8]
 def build_random_list(size,max_value):
-    """
-    Parameters:
-      size : the number of elements in the lsit
-      max_value : the max random value to put in the list
-    """
     l = [] # start with an empty list
-    
-
-    # make a loop that counts up to size
     i = 0
     while i < size:
         l.append(random.randrange(0,max_value))
@@ -30,6 +22,7 @@ def locate(l,value): #looks for the first time the value is in the list and prin
         else:
             i+=1
     return -1
+#or could do say found index -1 but then found-index =i and can break out of loop (look at github clasnotes if confused)
 def count(l,value2):
     print(l,"Counting:",value2)
     i = 0
@@ -58,6 +51,7 @@ def isIncreasing(l):
         else:
             return False
         return True
+    #could do opposite way which is faster by sayng that if l[i]> than l[i+1] than increasing i false. THis is more effecient
 def palindrome(l):
     print("is this a palindrome:",l)
     i=0
@@ -80,3 +74,5 @@ print(palindrome(l1))
 print(palindrome(l4))
 print(palindrome(l5))
 
+#The way P.Zamansky would do it is to build a random list, and then when searching instead of searching for a random number and making other lists
+#to guarantee that you have an example where the value is n the list could just do l[4] cz then it's definetly there. 
