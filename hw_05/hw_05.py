@@ -5,17 +5,17 @@ def filterodd(l):
     print(l)
     for i in l:
         if i%2 != 0:
-            oddl.append(i)
-        else:
-            pass
-    print(oddl)
+           oddl.append(i)
+    return oddl
+##        else:
+##            pass
+##    print(oddl)
 def mapsquare(l):
     print(l)
     slist=[]
     for i in l:
         slist.append(i**2)
-    print(slist)
-        
+    return slist
 print(filterodd(l1))
 print(mapsquare(l1))
 
