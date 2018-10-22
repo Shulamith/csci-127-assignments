@@ -39,7 +39,7 @@ def sentence(line):
         newSentence.append(compress_word(word))
     return ' '.join(newSentence)
         
-print("I love riding my bike beocmes:",sentence("I love riding my bike"))
+print("I love riding my bike. beocmes:",sentence("I love riding my bike."))
 print("What do you mean? becomes:",sentence("What do you mean?"))
         
         

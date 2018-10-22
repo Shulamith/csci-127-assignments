@@ -1,10 +1,6 @@
 def divide(A,B,u):
     size=A/B
     guests=u//size
-##    if guests != 0:
-##    guests = guests - %guests
-##    else:
-##        pass
     return guests
 
 
