@@ -15,7 +15,7 @@ nouns = ["car", "mountain", "sky", "star", "wolf", "dog", "shoe", "watch"]
 verbs = ["meditates", "works", "runs", "plays", "sings", "spits", "explodes"]
 heros=["Spiderman", "Wonderwoman", "Thor", "Batman"]
 
-
+##partsofspeech=["firstnames", "adjectives", "nouns", "verbs", "hereos"]
 
 ##def madlibs(s):
 ###function that finds all the missing words    
@@ -34,7 +34,8 @@ def madlibs(s):
     newS=[]
     heroN=random.choice(heros)
     #make a list that holds all the bracketed stuff
-    for item in s.split():
+    madlibList = s.split()
+    for item in madlibList:
         if item == "<firstname>":
             newS.append(random.choice(firstnames))
         elif item == "<adj>":
@@ -52,6 +53,11 @@ def madlibs(s):
 print(madlibs(sentence))
 print(madlibs(sentenceTwo))
 
+##def list_parts_of_speech(sentence):
+##    for character in sentence:
+##        if character = "<":
+##        index = 
+    
 
 
 
