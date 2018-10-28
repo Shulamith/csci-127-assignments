@@ -41,34 +41,34 @@ l2=build_random_list(5,10)
 print(l2,max(l2))
 print(l2,freq(l2,7))
 
-def mode(l):
-    s = 0
-    final_mode = 0
-    for i in l:
-        mode = freq(l, i)
-        if mode >= s:
-            s = mode
-            final_mode = i
-    return final_mode
-
 ##def mode(l):
-##    mode = []
-##    i=1
-##    for item in l:
-##        count = freq(l,item)
-##        if count >= i:
-##            i=count
-##            if i >= 2 and item not in mode:
-##                mode.append(item)
-##        else:
-##            pass
-##    if i == 1:
-##        return ("They all appear one time",l)
-####        frequency.append(count)
-####   print(frequency)
-####    mode = max(frequency)
-##    else:
-##        return mode
+##    s = 0
+##    final_mode = 0
+##    for i in l:
+##        mode = freq(l, i)
+##        if mode >= s:
+##            s = mode
+##            final_mode = i
+##    return final_mode
+
+def mode(l):
+    mode = []
+    i=1
+    for item in l:
+        count = freq(l,item)
+        if count >= i:
+            i=count
+            if i >= 2 and item not in mode:
+                mode.append(item)
+        else:
+            pass
+    if i == 1:
+        return ("They all appear one time",l)
+##        frequency.append(count)
+##   print(frequency)
+##    mode = max(frequency)
+    else:
+        return mode
         
         
 print(mode(l2))    
