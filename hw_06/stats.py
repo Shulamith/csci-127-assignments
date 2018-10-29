@@ -11,14 +11,12 @@ def build_random_list(size,max_value):
         # l = l + [random.randrange(0,max_value)]
         i = i + 1
     return l
-def max(l):
-    i=1
-    for x in range(0,len(l)):
+def max_index(l):
+    i=0
+    for x in range(1,len(l)):
         if l[x]>l[i]:
             i = x
-        else:
-            pass
-    return l[x]
+    return i
 ##
 ##    while i<len(l):
 ##        if l[i] == max:
@@ -26,7 +24,14 @@ def max(l):
 ##        else:
 ##            i+=1
 ##print(build_random_list(100,11))
-
+#Kushendra Ramrup and Shulamit
+#Professor Zamansky, "I realize that my mode may not be accurately representing the the mode in the list. It worked for smaller lists so I am trying to figure out why.
+def max(l):
+    i=0
+    for x in range(0,len(l)):
+        if l[x]>l[i]:
+            i = x
+    return l[i]
 
 def freq(l,val):
     count = 0 
@@ -37,19 +42,11 @@ def freq(l,val):
             pass
     return count
 l1= build_random_list(100,30)
-l2=build_random_list(5,10)
-print(l2,max(l2))
-print(l2,freq(l2,7))
+l2=build_random_list(99,11)
+print(l2,"the index of the max is:",max_index(l2))
+print("The freq of 7 is",freq(l2,7))
 
-##def mode(l):
-##    s = 0
-##    final_mode = 0
-##    for i in l:
-##        mode = freq(l, i)
-##        if mode >= s:
-##            s = mode
-##            final_mode = i
-##    return final_mode
+print(max(l2))
 
 def mode(l):
     mode = []
@@ -71,7 +68,7 @@ def mode(l):
         return mode
         
         
-print(mode(l2))    
+print("The mode is:",mode(l2))    
         
         
         
