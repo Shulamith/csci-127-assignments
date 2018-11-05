@@ -14,7 +14,7 @@ def happyLadybugs(b):
         return "yes"
 
 
-print(happyLadybugs(["B","C"]))
-print(happyLadybugs(["B","B"]))
-print(happyLadybugs(["B","C","B"]))
-print(happyLadybugs(["B","C","B","C","_"]))
+print("B,C",happyLadybugs(["B","C"]))
+print("B,B",happyLadybugs(["B","B"]))
+print("B,C,B",happyLadybugs(["B","C","B"]))
+print('B,C,B,C,_',happyLadybugs(["B","C","B","C","_"]))
