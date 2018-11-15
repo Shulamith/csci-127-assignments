@@ -11,7 +11,10 @@ def happyLadybugs(b):
                 return "No"
             else:
                 i+=1
-        return "yes"
+##        if b[len(b)-1] != b[(len(b))-2]:
+##            return false
+##        else:
+            return "yes"
     else:
         #I really should try to make the thing here
         #I wonder f I could see minimum amount of spaces rel to list needed to ensure possibility or to ensure that it is not solvable"
@@ -23,3 +26,10 @@ print("B,B",happyLadybugs(["B","B"]))
 print("B,C,B",happyLadybugs(["B","C","B"]))
 print('B,C,B,C,_',happyLadybugs(["B","C","B","C","_"]))
 print("B","_","C","A","B","C","A",happyLadybugs(["B","_","C","A","B","C","A"]))
+
+print(happyLadybugs("AABBCCEE"))
+
+#Making a dictionary by adding a value each time
+#for bug in s:
+#counts.setdefault(bug,0)  equivalent of if bug in counts.keys(): counts[bug} = counts[bug]+1 else: counts{bug}=1
+#counts[bug]=counts[bug]+1
