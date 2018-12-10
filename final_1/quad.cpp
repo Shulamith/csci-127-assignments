@@ -18,11 +18,12 @@ float quadsolve(float a, float b, float c){
 }
 int main()
 {
-	std::cout << "Discriminant of 3,5,.5 \n" << discriminant(3,6,.5) << "\n";
-	std::cout << "The root of the equation (if disc positive) is \n" << quadsolve(3,6,.5) << "\n";
+	std::cout << "Discriminant of 3,6,.5 \n" << discriminant(3,6,.5) << "\n";
+	std::cout << "Quadsolve of 3,6,.5 \n" << quadsolve(3,6,.5) << "\n";
+	//std::cout << "The root of the equation (if disc positive) is \n" << quadsolve(3,6,.5) << "\n";
 	std::cout << "\n Disc of 9,4,6 \n"<< discriminant(9,4,6) <<"\nThe root of the equation (if disc positive) is \n" <<quadsolve(9,4,6)<<"\n";
 	std::cout << "\n Disc of 1,1,0 \n"<< discriminant(1,1,0) <<"\nThe root of the equation (if disc positive) is \n" <<quadsolve(1,1,0)<<"\n";
-	std::cout << "\n Disc of .5,10,3 \n"<< discriminant(.5,10,.3) << "\nThe root of the equation (if disc positive) is \n" <<quadsolve(.5,10,.3)<<"\n";
+	std::cout << "\n Disc of .5,10,3 \n"<< discriminant(.5,10,3) << "\nThe root of the equation (if disc positive) is \n" <<quadsolve(.5,10,3)<<"\n";
 	std::cout << "\n Disc of 2,8,4 \n"<< discriminant(2,8,4) <<"\nThe root of the equation (if disc positive) is \n" <<quadsolve(2,8,4)<<"\n";
 	std::cout << "\n Disc of 2,8,8 \n"<< discriminant(2,8,8) <<"\nThe root of the equation (if disc positive) is \n" <<quadsolve(2,8,8)<<"\n";
 	/* code */
