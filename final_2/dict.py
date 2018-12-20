@@ -34,6 +34,7 @@ print("RAp",spellcheck(d,"RAp"))
 print("Holmes",spellcheck(d,"Holmes"))
 print("asdlfjksdfl",spellcheck(d,"asdlfjsdlf"))
 print("um",spellcheck(d,"um"))
+print("laptop",spellcheck(d,"laptop"))
 ##print("RAp",spellcheck(d,"RAp"))
 
     

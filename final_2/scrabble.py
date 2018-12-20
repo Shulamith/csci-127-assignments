@@ -25,7 +25,9 @@ def withWild(letters,word):
         else:
             remaining_letters.remove('?')
     return True
-
+print("\nWildCards:")
 print("orppgma?","program",withWild("orppgma?","program"))
 print("?????","hello",withWild("?????","hello"))
 print("qwert?","teas",withWild("qwert?","teas"))
+print("a?b?c?t","cat",withWild("a?b?c?t","cat"))
+print("actde","cat",withWild("actde","cat"))

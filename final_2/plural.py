@@ -26,3 +26,5 @@ print("Mike's and looks look like plurals to prgrm",countPlurals("Mike's and loo
 print("\nPosessives:")
 print("gorillas gorilla's cats",notPossesive("gorillas gorilla's cats"))
 print("monkeys love to eat bananas",notPossesive("monkeys love to eat bananas"))
+print("Who's keys are those",notPossesive("Who's keys are those"))
+print("the program doesn't recognize CAPITALS ON purpose",notPossesive("the program doesn't recognize CAPITALS ON purpose"))
